@@ -1,18 +1,8 @@
 local sharedItems = exports['qbr-core']:GetItems()
 
-exports['qbr-core']:CreateUseableItem("claimlease1", function(source, item)
+exports['qbr-core']:CreateUseableItem("claimlease", function(source, item)
     local src = tonumber(source)
-	TriggerClientEvent("rsg_goldrush:client:gotoclaim1", src, item.name)
-end)
-
-exports['qbr-core']:CreateUseableItem("claimlease2", function(source, item)
-    local src = tonumber(source)
-	TriggerClientEvent("rsg_goldrush:client:gotoclaim2", src, item.name)
-end)
-
-exports['qbr-core']:CreateUseableItem("claimlease3", function(source, item)
-    local src = tonumber(source)
-	TriggerClientEvent("rsg_goldrush:client:gotoclaim3", src, item.name)
+	TriggerClientEvent("rsg_goldrush:client:gotoclaim", src, item.name)
 end)
 
 -- give reward
