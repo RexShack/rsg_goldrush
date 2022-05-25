@@ -5,10 +5,12 @@ rdr3_warning 'I acknowledge that this is a prerelease build of RedM, and I am aw
 description 'RexshackGaming : Gold Rush'
 
 client_scripts {
+	'config.lua',
 	'client/client.lua',
 }
 
 server_scripts {
+	'config.lua',
 	'server/server.lua',
 }
 
